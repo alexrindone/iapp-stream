@@ -1,23 +1,23 @@
 const config = {
     server: {
-        secret: 'kjVkuti2xAyF3JGCzSZTk0YWM5JhI9mgQW4rytXc',
-        port : 3333
+        secret: process.env.SERVER_SECRET,
+        port : process.env.CLIENT_PORT
     },
     rtmp_server: {
         rtmp: {
-            port: 1935,
+            port: process.env.RTMP_PORT,
             chunk_size: 60000,
             gop_cache: true,
             ping: 60,
             ping_timeout: 30
         },
         http: {
-            port: 8888,
+            port: process.env.SERVER_PORT,
             mediaroot: './server/media',
             allow_origin: '*'
         },
         trans: {
-            ffmpeg: '/usr/local/bin/ffmpeg',
+            ffmpeg: process.env.PATH_TO_FFMPEG,
             tasks: [
                 {
                     app: 'live',

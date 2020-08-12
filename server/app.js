@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express'),
     path = require('path'),
     Session = require('express-session'),
@@ -12,8 +13,7 @@ const express = require('express'),
     app = express(),
     node_media_server = require('./media_server'),
     thumbnail_generator = require('./cron/thumbnails');
-require('dotenv').config();
-
+// connect to mongodb for passport auth
 mongoose.connect('mongodb://'+ process.env.DB_HOST + ':' + process.env.DB_PORT + '/' + process.env.DB_NAME,
 {user: process.env.DB_USER, pass: process.env.DB_PASS}).then(result => {
     console.log('connection established...');
