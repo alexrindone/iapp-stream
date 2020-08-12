@@ -1,6 +1,5 @@
 .idea
 .env
-public
 node_modules
 npm-debug.log
 
