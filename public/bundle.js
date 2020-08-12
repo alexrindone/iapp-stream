@@ -156,7 +156,7 @@ function (_React$Component) {
     value: function getLiveStreams() {
       var _this2 = this;
 
-      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('http://127.0.0.1:' + _server_config_default__WEBPACK_IMPORTED_MODULE_4___default.a.rtmp_server.http.port + '/api/streams').then(function (res) {
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('http://35.175.134.119:' + _server_config_default__WEBPACK_IMPORTED_MODULE_4___default.a.rtmp_server.http.port + '/api/streams').then(function (res) {
         var streams = res.data;
 
         if (_typeof(streams['live'] !== 'undefined')) {
