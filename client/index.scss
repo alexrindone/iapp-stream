@@ -1,0 +1,20 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~video.js/dist/video-js.css';
+
+@font-face {
+  font-family: 'TabacSansRegular';
+  src: url('https://iapp.org/wp-content/themes/iapp/static/fonts/Tabac_Sans_Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TabacSansBold';
+  src: url('https://iapp.org/wp-content/themes/iapp/static/fonts/Tabac_Sans_Bold.woff') format('woff');
+}
+
+html,body{
+  font-family: 'TabacSansRegular';
+}
+
+.bg-iapp-green {
+  background-color: #70bf4c;
+}
