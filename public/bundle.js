@@ -609,7 +609,7 @@ function (_React$Component) {
             autoplay: false,
             controls: true,
             sources: [{
-              src: 'http://127.0.0.1:' + _server_config_default__WEBPACK_IMPORTED_MODULE_3___default.a.rtmp_server.http.port + '/live/' + res.data.stream_key + '/index.m3u8',
+              src: 'http://35.175.134.119:' + _server_config_default__WEBPACK_IMPORTED_MODULE_3___default.a.rtmp_server.http.port + '/live/' + res.data.stream_key + '/index.m3u8',
               type: 'application/x-mpegURL'
             }],
             fluid: true
