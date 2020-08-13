@@ -108945,28 +108945,29 @@ function extend() {
   !*** ./server/config/default.js ***!
   \**********************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function(process) {var config = {
+var config = {
   server: {
-    secret: process.env.SERVER_SECRET,
-    port: process.env.CLIENT_PORT
+    secret: 'kjVkuti2xAyF3JGCzSZTk0YWM5JhI9mgQW4rytXc',
+    port: 3333
   },
   rtmp_server: {
     rtmp: {
-      port: process.env.RTMP_PORT,
+      port: 1935,
       chunk_size: 60000,
       gop_cache: true,
       ping: 60,
       ping_timeout: 30
     },
     http: {
-      port: process.env.SERVER_PORT,
+      port: 8888,
       mediaroot: './server/media',
       allow_origin: '*'
     },
     trans: {
-      ffmpeg: process.env.PATH_TO_FFMPEG,
+      ffmpeg: '/usr/bin/ffmpeg',
+      // ffmpeg: '/usr/local/bin/ffmpeg',
       tasks: [{
         app: 'live',
         hls: true,
@@ -108978,7 +108979,6 @@ function extend() {
   }
 };
 module.exports = config;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/node-libs-browser/node_modules/process/browser.js */ "./node_modules/node-libs-browser/node_modules/process/browser.js")))
 
 /***/ }),
 

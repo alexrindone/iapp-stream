@@ -6,8 +6,8 @@ const CronJob = require('cron').CronJob,
 
 const job = new CronJob('*/5 * * * * *', function () {
     request
-        .get('http://' + process.env.DB_HOST + ':' + port + '/api/streams', function (error, response, body) {
-            let streams = JSON.parse(body);
+    .get('http://35.175.134.119:' + port + '/api/streams', function (error, response, body) {
+        let streams = JSON.parse(body);
             if (typeof (streams['live'] !== undefined)) {
                 let live_streams = streams['live'];
                 for (let stream in live_streams) {
