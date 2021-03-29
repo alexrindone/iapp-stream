@@ -1,2 +1,2 @@
-# iapp-stream
-Test stream for IAPP using NodeJS and React
+# app-stream
+Test stream for using NodeJS and React
